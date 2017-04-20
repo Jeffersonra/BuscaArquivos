@@ -1,0 +1,18 @@
+c:\users\mt15160\documents\visual studio 2013\Projects\BuscaImagens\BuscaImagens\bin\Debug\BuscaImagens.exe.config
+c:\users\mt15160\documents\visual studio 2013\Projects\BuscaImagens\BuscaImagens\bin\Debug\BuscaImagens.exe
+c:\users\mt15160\documents\visual studio 2013\Projects\BuscaImagens\BuscaImagens\bin\Debug\BuscaImagens.pdb
+c:\users\mt15160\documents\visual studio 2013\Projects\BuscaImagens\BuscaImagens\obj\Debug\BuscaImagens.csprojResolveAssemblyReference.cache
+c:\users\mt15160\documents\visual studio 2013\Projects\BuscaImagens\BuscaImagens\obj\Debug\BuscaImagens.Form1.resources
+c:\users\mt15160\documents\visual studio 2013\Projects\BuscaImagens\BuscaImagens\obj\Debug\BuscaImagens.Properties.Resources.resources
+c:\users\mt15160\documents\visual studio 2013\Projects\BuscaImagens\BuscaImagens\obj\Debug\BuscaImagens.csproj.GenerateResource.Cache
+c:\users\mt15160\documents\visual studio 2013\Projects\BuscaImagens\BuscaImagens\obj\Debug\BuscaImagens.exe
+c:\users\mt15160\documents\visual studio 2013\Projects\BuscaImagens\BuscaImagens\obj\Debug\BuscaImagens.pdb
+C:\Users\mt16143\Documents\BuscaImagens\BuscaImagens\BuscaImagens\bin\Debug\BuscaImagens.exe.config
+C:\Users\mt16143\Documents\BuscaImagens\BuscaImagens\BuscaImagens\obj\Debug\BuscaImagens.exe
+C:\Users\mt16143\Documents\BuscaImagens\BuscaImagens\BuscaImagens\obj\Debug\BuscaImagens.pdb
+C:\Users\mt16143\Documents\BuscaImagens\BuscaImagens\BuscaImagens\bin\Debug\BuscaImagens.exe
+C:\Users\mt16143\Documents\BuscaImagens\BuscaImagens\BuscaImagens\bin\Debug\BuscaImagens.pdb
+C:\Users\mt16143\Documents\BuscaImagens\BuscaImagens\BuscaImagens\obj\Debug\BuscaImagens.csprojResolveAssemblyReference.cache
+C:\Users\mt16143\Documents\BuscaImagens\BuscaImagens\BuscaImagens\obj\Debug\BuscaImagens.Form1.resources
+C:\Users\mt16143\Documents\BuscaImagens\BuscaImagens\BuscaImagens\obj\Debug\BuscaImagens.Properties.Resources.resources
+C:\Users\mt16143\Documents\BuscaImagens\BuscaImagens\BuscaImagens\obj\Debug\BuscaImagens.csproj.GenerateResource.Cache
