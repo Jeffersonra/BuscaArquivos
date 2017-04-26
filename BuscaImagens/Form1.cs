@@ -19,29 +19,36 @@ namespace BuscaImagens
             InitializeComponent();
         }
 
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-
+            txtProcessando.Visible = false;
+            label1.Visible = false;
         }
 
         private void btnProcurar_Click(object sender, EventArgs e)
         {
 
-            Listar();
-      
+            if (txtdestino.Text != "")
+            {
+                txtProcessando.Visible = true;
+                Copiar();
+            }
+            else
+            {
+                MessageBox.Show("Selecione um Arquivo!");
+            }
+            
         }
 
 
-        private void Listar()
+        private void Copiar()
         {
-            label3.Visible = true;
-
-            string nomeArquivo = @"C:\Users\mt15160\Documents\Dev\EncontrarArquivos\BuscaImagens\BuscaImagens\log\log" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt";
+            
+            string nomeArquivo = @"C:\Users\jeffe\Source\Repos\BuscaArquivos\Log\log" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt";
 
             string line;
 
-            System.IO.StreamReader file =
-                                          new System.IO.StreamReader(@txtdestino.Text);
+            System.IO.StreamReader file = new System.IO.StreamReader(@txtdestino.Text);
 
             StreamWriter writer = new StreamWriter(nomeArquivo);
             while ((line = file.ReadLine()) != null)
@@ -59,10 +66,10 @@ namespace BuscaImagens
 
                 else if (System.IO.File.Exists(arrLines[0]))
                 {
-
+                    label1.Text = arrLines[0];
                     System.IO.File.Copy(arrLines[0], (arrLines[1]));
 
-                    writer.WriteLine(arrLines[0] + " Arquivo copiado para " + (arrLines[1]) + " na data " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+                    writer.WriteLine("Origem: " + arrLines[0] + ";Destino: " + (arrLines[1]) + ";Copia realizada com sucesso!;data " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
 
                 }
                 else
@@ -77,11 +84,7 @@ namespace BuscaImagens
         }
 
 
-
-        private void btnSair_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        #region LabelEntreoutros
 
         public void textDiretorio_TextChanged(object sender, EventArgs e)
         {
@@ -98,10 +101,9 @@ namespace BuscaImagens
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
-            label3.Visible = false;
-            label1.Visible = false;
+
         }
 
         public void label1_Click(object sender, EventArgs e)
@@ -114,6 +116,31 @@ namespace BuscaImagens
 
         }
 
+        #endregion LabelEntreoutros
 
+        private void selectPath_Click(object sender, EventArgs e)
+        {
+            openFile.Multiselect = false;
+            openFile.InitialDirectory = @"c:\";
+            openFile.Filter = "Arquivos de texto (*.txt)|*.txt";
+            openFile.CheckFileExists = true;
+            openFile.CheckPathExists = true;
+            openFile.FilterIndex = 2;
+            openFile.RestoreDirectory = true;
+            openFile.ReadOnlyChecked = true;
+            openFile.ShowReadOnly = true;
+            openFile.Title = "Selecione o Arquivo";
+
+            DialogResult dr = openFile.ShowDialog();
+            if (openFile.FileName == "openFile")
+            {
+                txtdestino.Text = "";
+            }
+            else
+            {
+                txtdestino.Text = openFile.FileName;
+            }
+            
+        }
     }
 }

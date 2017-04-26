@@ -29,26 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.btnProcurar = new System.Windows.Forms.Button();
             this.txtdestino = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.back = new System.ComponentModel.BackgroundWorker();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtProcessando = new System.Windows.Forms.Label();
+            this.selectPath = new System.Windows.Forms.Button();
+            this.openFile = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // btnProcurar
             // 
-            this.btnProcurar.Location = new System.Drawing.Point(531, 106);
+            this.btnProcurar.Location = new System.Drawing.Point(597, 99);
             this.btnProcurar.Name = "btnProcurar";
-            this.btnProcurar.Size = new System.Drawing.Size(75, 23);
+            this.btnProcurar.Size = new System.Drawing.Size(90, 30);
             this.btnProcurar.TabIndex = 2;
             this.btnProcurar.Text = "Processar";
             this.btnProcurar.UseVisualStyleBackColor = true;
@@ -56,26 +50,21 @@
             // 
             // txtdestino
             // 
-            this.txtdestino.Location = new System.Drawing.Point(102, 67);
+            this.txtdestino.Location = new System.Drawing.Point(81, 69);
             this.txtdestino.Name = "txtdestino";
-            this.txtdestino.Size = new System.Drawing.Size(506, 20);
+            this.txtdestino.Size = new System.Drawing.Size(559, 20);
             this.txtdestino.TabIndex = 4;
             this.txtdestino.TextChanged += new System.EventHandler(this.txtdestino_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 74);
+            this.label2.Location = new System.Drawing.Point(12, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Arquivo txt: ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // back
-            // 
-            this.back.WorkerReportsProgress = global::BuscaImagens.Properties.Settings.Default.True;
-            this.back.WorkerSupportsCancellation = global::BuscaImagens.Properties.Settings.Default.True;
             // 
             // label1
             // 
@@ -87,22 +76,33 @@
             this.label1.Text = "Arquivo";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label3
+            // txtProcessando
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(33, 23);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Processando:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.txtProcessando.AutoSize = true;
+            this.txtProcessando.Location = new System.Drawing.Point(33, 23);
+            this.txtProcessando.Name = "txtProcessando";
+            this.txtProcessando.Size = new System.Drawing.Size(72, 13);
+            this.txtProcessando.TabIndex = 7;
+            this.txtProcessando.Text = "Processando:";
+            this.txtProcessando.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // selectPath
+            // 
+            this.selectPath.Image = global::BuscaImagens.Properties.Resources._1493190937_BT_folder_blanc;
+            this.selectPath.Location = new System.Drawing.Point(644, 68);
+            this.selectPath.Name = "selectPath";
+            this.selectPath.Size = new System.Drawing.Size(43, 23);
+            this.selectPath.TabIndex = 8;
+            this.selectPath.UseVisualStyleBackColor = true;
+            this.selectPath.Click += new System.EventHandler(this.selectPath_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(692, 141);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.selectPath);
+            this.Controls.Add(this.txtProcessando);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtdestino);
@@ -118,14 +118,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.Button btnProcurar;
         private System.Windows.Forms.TextBox txtdestino;
         private System.Windows.Forms.Label label2;
-        private System.ComponentModel.BackgroundWorker back;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label txtProcessando;
+        private System.Windows.Forms.Button selectPath;
+        private System.Windows.Forms.OpenFileDialog openFile;
     }
 }
 

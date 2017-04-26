@@ -28,3 +28,12 @@ C:\Users\mt15160\Documents\Dev\EncontrarArquivos\BuscaImagens\BuscaImagens\Busca
 C:\Users\mt15160\Source\Repos\BuscaArquivos\BuscaImagens\bin\Debug\BuscaImagens.exe.config
 C:\Users\mt15160\Source\Repos\BuscaArquivos\BuscaImagens\obj\Debug\BuscaImagens.exe
 C:\Users\mt15160\Source\Repos\BuscaArquivos\BuscaImagens\obj\Debug\BuscaImagens.pdb
+C:\Users\jeffe\Source\Repos\BuscaArquivos\BuscaImagens\bin\Debug\BuscaImagens.exe.config
+C:\Users\jeffe\Source\Repos\BuscaArquivos\BuscaImagens\obj\Debug\BuscaImagens.exe
+C:\Users\jeffe\Source\Repos\BuscaArquivos\BuscaImagens\obj\Debug\BuscaImagens.pdb
+C:\Users\jeffe\Source\Repos\BuscaArquivos\BuscaImagens\obj\Debug\BuscaImagens.csprojResolveAssemblyReference.cache
+C:\Users\jeffe\Source\Repos\BuscaArquivos\BuscaImagens\obj\Debug\BuscaImagens.Form1.resources
+C:\Users\jeffe\Source\Repos\BuscaArquivos\BuscaImagens\obj\Debug\BuscaImagens.Properties.Resources.resources
+C:\Users\jeffe\Source\Repos\BuscaArquivos\BuscaImagens\obj\Debug\BuscaImagens.csproj.GenerateResource.Cache
+C:\Users\jeffe\Source\Repos\BuscaArquivos\BuscaImagens\bin\Debug\BuscaImagens.exe
+C:\Users\jeffe\Source\Repos\BuscaArquivos\BuscaImagens\bin\Debug\BuscaImagens.pdb
