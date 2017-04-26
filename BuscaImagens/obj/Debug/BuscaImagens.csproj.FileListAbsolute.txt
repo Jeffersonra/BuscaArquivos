@@ -37,3 +37,6 @@ C:\Users\jeffe\Source\Repos\BuscaArquivos\BuscaImagens\obj\Debug\BuscaImagens.Pr
 C:\Users\jeffe\Source\Repos\BuscaArquivos\BuscaImagens\obj\Debug\BuscaImagens.csproj.GenerateResource.Cache
 C:\Users\jeffe\Source\Repos\BuscaArquivos\BuscaImagens\bin\Debug\BuscaImagens.exe
 C:\Users\jeffe\Source\Repos\BuscaArquivos\BuscaImagens\bin\Debug\BuscaImagens.pdb
+C:\Users\mt15160\Source\Repos\RoboCopia\BuscaImagens\bin\Debug\BuscaImagens.exe.config
+C:\Users\mt15160\Source\Repos\RoboCopia\BuscaImagens\obj\Debug\BuscaImagens.exe
+C:\Users\mt15160\Source\Repos\RoboCopia\BuscaImagens\obj\Debug\BuscaImagens.pdb

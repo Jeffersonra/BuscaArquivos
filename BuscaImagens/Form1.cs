@@ -59,8 +59,8 @@ namespace BuscaImagens
                 label1.Text = arrLines[1];
                 if (System.IO.File.Exists(arrLines[1]))
                 {
-                    MessageBox.Show("Arquivo ja existente");
-                    writer.WriteLine(arrLines[1] + "Arquivo ja existente ");
+                    //MessageBox.Show("Arquivo ja existente");
+                    writer.WriteLine(arrLines[1] + ";Data " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss") + ";Arquivo ja existente");
 
                 }
 
@@ -69,18 +69,18 @@ namespace BuscaImagens
                     label1.Text = arrLines[0];
                     System.IO.File.Copy(arrLines[0], (arrLines[1]));
 
-                    writer.WriteLine("Origem: " + arrLines[0] + ";Destino: " + (arrLines[1]) + ";Copia realizada com sucesso!;data " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+                    writer.WriteLine("Origem: " + arrLines[0] + ";Destino: " + (arrLines[1]) + ";Data " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss") + ";Copia realizada com sucesso!");
 
                 }
                 else
                 {
-                    MessageBox.Show("Arquivo Não encontrado");
-                    writer.WriteLine(arrLines[0] + " Arquivo Não encontrado na data " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+                   // MessageBox.Show("Arquivo Não encontrado");
+                    writer.WriteLine(arrLines[0] + ";Data " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss") + ";Arquivo não encontrado");
                 }
 
             }
             writer.Close();
-            MessageBox.Show("Processo finalizado");
+            MessageBox.Show("Processo finalizado!");
         }
 
 
@@ -118,6 +118,8 @@ namespace BuscaImagens
 
         #endregion LabelEntreoutros
 
+
+        // OpenFileDialog para Selecionar o arquivo -  Somente txt
         private void selectPath_Click(object sender, EventArgs e)
         {
             openFile.Multiselect = false;
@@ -129,7 +131,7 @@ namespace BuscaImagens
             openFile.RestoreDirectory = true;
             openFile.ReadOnlyChecked = true;
             openFile.ShowReadOnly = true;
-            openFile.Title = "Selecione o Arquivo";
+            openFile.Title = "Selecione o Arquivo: ";
 
             DialogResult dr = openFile.ShowDialog();
             if (openFile.FileName == "openFile")
