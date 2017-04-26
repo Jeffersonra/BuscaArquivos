@@ -135,16 +135,7 @@ namespace BuscaImagens
             openFile.ShowReadOnly = true;
             openFile.Title = "Selecione o Arquivo: ";
 
-            DialogResult dr = openFile.ShowDialog();
-            if (openFile.FileName == "openFile")
-            {
-                txtdestino.Text = "";
-            }
-            else
-            {
-                txtdestino.Text = openFile.FileName;
-            }
-            
+            DialogResult dr = openFile.ShowDialog();           
         }
     }
 }
