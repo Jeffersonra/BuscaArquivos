@@ -43,14 +43,15 @@ namespace BuscaImagens
 
         private void Copiar()
         {
-            
-            string nomeArquivo = @"C:\Users\jeffe\Source\Repos\BuscaArquivos\Log\log" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt";
+
+            string nomeArquivo = @"C:\Users\mt15160\Source\Repos\RoboCopia\Log\log" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt";
 
             string line;
 
             System.IO.StreamReader file = new System.IO.StreamReader(@txtdestino.Text);
 
             StreamWriter writer = new StreamWriter(nomeArquivo);
+            writer.WriteLine("Inicio do processamento: " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
             while ((line = file.ReadLine()) != null)
             {
 
@@ -79,6 +80,7 @@ namespace BuscaImagens
                 }
 
             }
+            writer.WriteLine("Final do processamento: " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
             writer.Close();
             MessageBox.Show("Processo finalizado!");
         }
