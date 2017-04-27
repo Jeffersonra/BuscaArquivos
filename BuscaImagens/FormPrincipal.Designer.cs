@@ -1,6 +1,6 @@
 ﻿namespace BuscaImagens
 {
-    partial class Form1
+    partial class FormPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.btnProcurar = new System.Windows.Forms.Button();
             this.txtdestino = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,7 +40,7 @@
             // 
             // btnProcurar
             // 
-            this.btnProcurar.Location = new System.Drawing.Point(597, 99);
+            this.btnProcurar.Location = new System.Drawing.Point(550, 99);
             this.btnProcurar.Name = "btnProcurar";
             this.btnProcurar.Size = new System.Drawing.Size(90, 30);
             this.btnProcurar.TabIndex = 2;
@@ -96,7 +96,11 @@
             this.selectPath.UseVisualStyleBackColor = true;
             this.selectPath.Click += new System.EventHandler(this.selectPath_Click);
             // 
-            // Form1
+            // openFile
+            // 
+            this.openFile.FileOk += new System.ComponentModel.CancelEventHandler(this.openFile_FileOk);
+            // 
+            // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -108,7 +112,7 @@
             this.Controls.Add(this.txtdestino);
             this.Controls.Add(this.btnProcurar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Robô Copia Arquivos";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -119,12 +123,12 @@
 
         #endregion
         private System.Windows.Forms.Button btnProcurar;
-        private System.Windows.Forms.TextBox txtdestino;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label txtProcessando;
         private System.Windows.Forms.Button selectPath;
         private System.Windows.Forms.OpenFileDialog openFile;
+        public System.Windows.Forms.TextBox txtdestino;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label txtProcessando;
     }
 }
 
