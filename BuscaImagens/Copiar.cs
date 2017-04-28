@@ -33,7 +33,8 @@ namespace BuscaImagens
                     frm.label1.Visible = true;
                     frm.label1.Text = arrLines[1];
                     FileInfo fileInfo = new FileInfo(arrLines[0]);
-                    if (System.IO.File.Exists(arrLines[1] + fileInfo.Name)) // verifica se o arquivo copia existe 
+                    string validaArquivoFinal = (arrLines[1] + fileInfo.Name); // Variavel para verificar se o arquivo ja foi copia
+                    if (System.IO.File.Exists(validaArquivoFinal)) // verifica se o arquivo ja foi copia
                     {
                         writer.WriteLine(arrLines[1] + ";Data " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss") + ";Arquivo ja existente");
                     }
@@ -56,17 +57,6 @@ namespace BuscaImagens
                     {
 
                     }
-
-                    //    (System.IO.File.Exists(arrLines[0]) && System.IO.Directory.Exists(arrLines[1]) )
-                    //{
-                    //    frm.label1.Text = arrLines[0];
-                    //    System.IO.File.Copy(arrLines[0], (arrLines[1]));
-                    //    writer.WriteLine("Origem: " + arrLines[0] + ";Destino: " + (arrLines[1]) + ";Data " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss") + ";Copia realizada com sucesso!");
-                    //}
-                    //else
-                    //{
-
-                    //}
 
                 }
                 writer.WriteLine("Final do processamento: " + DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
