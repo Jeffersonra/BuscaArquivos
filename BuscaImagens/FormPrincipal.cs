@@ -103,7 +103,7 @@ namespace BuscaImagens
         
         private string RetornaListaDiretorios()
         {
-            DirectoryInfo dir = new DirectoryInfo(@"C:\_Sinf\SINF\0.Enterprise\Main\WindowsDesktop");
+            DirectoryInfo dir = new DirectoryInfo(@"C:\Main\WindowsDesktop");
 
             var lista = "";
             foreach (DirectoryInfo file in dir.GetDirectories())
