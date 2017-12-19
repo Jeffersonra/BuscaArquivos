@@ -100,6 +100,21 @@ namespace BuscaImagens
 
             txtdestino.Text = openFile.FileName;
         }
+        
+        private string RetornaListaDiretorios()
+        {
+            DirectoryInfo dir = new DirectoryInfo(@"C:\_Sinf\SINF\0.Enterprise\Main\WindowsDesktop");
+
+            var lista = "";
+            foreach (DirectoryInfo file in dir.GetDirectories())
+            {
+
+                lista = lista + file.FullName.ToString() + "\r\n";
+
+            }
+            lista = lista.Replace("\"","/");
+            return lista;
+        }
 
     }
 }
